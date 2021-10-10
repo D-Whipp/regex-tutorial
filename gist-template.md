@@ -28,7 +28,28 @@ In this tutorial we'll be taking a look at an expression used to match and HTML 
 
 ## Regex Components
 
+Let's start by breaking down the expression /^<([a-z]+)([^<]+)_(?:>(._)<\/\1>|\s+\/>)$/ into it's more basic components to make it a little less intimidating:
+
+^
+<
+([a-z]+)
+([^<]+)
+
+\_(?:>(.\*)<\/\1>|\s+\/>)$
+
 ### Anchors
+
+Anchors:
+
+- ^ - This anchor matches the START of the string with the pattern it is attached to.
+  - Example: ^R identifies the first "R" at the start of a string.
+- $ - This anchor matches the END of the string with the pattern it is attached to.
+- \A - This anchor
+- \G - This anchor
+- \Z - This anchor
+- \` - This anchor
+
+Anchors used in this Regular Expression: ^
 
 ### Quantifiers
 
