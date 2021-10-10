@@ -4,6 +4,8 @@
 
 <!-- Introductory paragraph (replace this with your text) -->
 
+## Introduction
+
 Regular Expressions, also known as REGEX or REGEXP, are created using a sequence of characters that define a search pattern. By matching patterns in a string a developer can then take the matched string and perform an operation on it. Such as: replace it with another string, or take the matched string and perform a validation on it; insuring that the matched string meets the criteria that has been pre-defined by the developer.
 
 ## Summary
@@ -30,26 +32,26 @@ In this tutorial we'll be taking a look at an expression used to match and HTML 
 
 Let's start by breaking down the expression /^<([a-z]+)([^<]+)_(?:>(._)<\/\1>|\s+\/>)$/ into it's more basic components to make it a little less intimidating:
 
-^
-<
-([a-z]+)
-([^<]+)
-
-\_(?:>(.\*)<\/\1>|\s+\/>)$
+- ^
+- <
+- ([a-z]+)
+- ([^<]+)
+- \_
+- (?:>(.\*)<\/\1>|\s+\/>)
+- $
 
 ### Anchors
 
 Anchors:
 
 - ^ - This anchor matches the START of the string with the pattern it is attached to.
-  - Example: ^R identifies the first "R" at the start of a string.
+  - Example: "^R" identifies the first "R" at the start of a string.
 - $ - This anchor matches the END of the string with the pattern it is attached to.
-- \A - This anchor
-- \G - This anchor
-- \Z - This anchor
-- \` - This anchor
+  - Example: "mode$" matches the lase "mode" in a given string (Important: it will match "mode" at the and of the string and not "mode.").
+- \ - This anchor is used to match all occurrences of the string following it.
+  - Example: "\a" will match all "a"'s in a given string.
 
-Anchors used in this Regular Expression: ^
+Anchors used in this Regular Expression: ^, \, $.
 
 ### Quantifiers
 
