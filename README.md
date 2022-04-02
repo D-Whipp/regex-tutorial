@@ -24,4 +24,6 @@ If you're interested in seeing more of my work then check out my [portfolio](htt
 If you'd like to contact me my email is dwhipp88@gmail.com.
 
 ## Badges
-
+![regex tutorial](https://img.shields.io/badge/regex-tutorial-darkblue)
+![matching html tag](https://img.shields.io/badge/regex-matching%20html%20tag-darkblue)
+![regular expression tutorial](https://img.shields.io/badge/regular%20expression-tutorial-darkblue)
